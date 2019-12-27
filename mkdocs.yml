@@ -1,6 +1,6 @@
 site_name: Justice-Universe
 nav:
-  - Home: readme.md
+  - Home: index.md
   - Keys: keys.md
   - Query: query.md
   - Transaction: tx.md

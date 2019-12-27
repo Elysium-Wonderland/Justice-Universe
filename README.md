@@ -66,8 +66,7 @@ Flags:
       --trace             print out full stack trace on errors
 
 Additional help topics:
-  justcli            
-  justcli            
+  justcli                       
 
 Use "justcli [command] --help" for more information about a command.
 ```
@@ -78,7 +77,7 @@ Use "justcli [command] --help" for more information about a command.
 
 ### Setting up justcli
 
-First, set up the address of the full-node you want to connect to:
+First, set up the address of the full-node (node.justuni.club:26650) you want to connect to:
 ```
 justcli config node <host>:<port>
 # example: justcli config node tcp://your.trusted.node.address:port
@@ -134,7 +133,7 @@ justcli tx send <account_name> <receive_address> 100000000000000000000ajt --fees
 ### Staking
 On the Just mainnet, we delegate ajt, where 1jt = 10^18ajt. You can query the list of all supernodes of a specific chain:
 ```
-justcli query staking supernodes
+justcli query staking validators
 ```
  Here's how you can lock JT to a supernodes:
 ```

@@ -1,0 +1,7 @@
+site_name: Justice-Universe
+nav:
+  - Home: readme.md
+  - Keys: keys.md
+  - Query: query.md
+  - Transaction: tx.md
+theme: readthedocs

@@ -121,7 +121,7 @@ After receiving JT to your address, you can view your account's balance by typin
 ```
 justcli query account <account_address>
 ```
-> Warning Note: When you query an account balance with zero JT, you will get this error: No account with address <account_cosmos> was found in the state. This can also happen if you fund the account before your node has fully synced with the chain. These are both normal.
+> Warning Note: When you query an account balance with zero JT, you will get this error: No account with address <account_address> was found in the state. This can also happen if you fund the account before your node has fully synced with the chain. These are both normal.
 
 ### Send JT
 The following command could be used to send coins from one account to another:

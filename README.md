@@ -32,7 +32,11 @@ Support linux operating system, ubuntu 16+, centOS 7+ are recommended
 
 
 ### Install justcli
-Download the execution file of justcli, copy it to the / usr / local / bin directory, and enter the directory to modify the execution permissions
+Download the execution file of justcli from releases page, or use wget
+```
+wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.0/justcli.tar.gz
+```
+copy justcli to the / usr / local / bin directory, and enter the directory to modify the execution permissions
 ```
 chmod 777 justcli
 ```
@@ -80,7 +84,7 @@ Use "justcli [command] --help" for more information about a command.
 First, set up the address of the full-node (node.justuni.club:26650) you want to connect to:
 ```
 justcli config node <host>:<port>
-# example: justcli config node tcp://your.trusted.node.address:port
+# example: justcli config node node.justuni.club:26650
 ```
 Then, let us set the default value of the --trust-node flag:
 ```

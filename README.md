@@ -157,10 +157,9 @@ justcli tx distribution withdraw-all-rewards --from <account_name> --fees=500000
 ```
 Unbond your staking (Unbonding time: 14days)
 ```
-justcli tx staking unbond <supernode_address> <amount>ajt --from <account_name>
+justcli tx staking unbond <supernode_address> <amount>ajt --from <account_name> --fees=5000000000000000ajt
 ```
 
 
 ##### More operations query with `justcli -h`
-
 

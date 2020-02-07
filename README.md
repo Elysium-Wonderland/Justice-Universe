@@ -164,4 +164,4 @@ justcli tx staking unbond <supernode_address> <amount>ajt --from <account_name> 
 ##### More operations query with `justcli -h`
 
 ### Become a supernode
-To learn how to become a supernode, go to the ![Supernode Intro](https://github.com/Elysium-Wonderland/Justice-Universe/blob/master/docs/supernode.md).
+To learn how to become a supernode, go to the [Supernode Intro](./docs/supernode.md).

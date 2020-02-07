@@ -4,4 +4,5 @@ nav:
   - Keys: keys.md
   - Query: query.md
   - Transaction: tx.md
+  - Supernode: supernode.md
 theme: readthedocs

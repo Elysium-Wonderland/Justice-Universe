@@ -27,7 +27,7 @@ Once a supernode is created, JT holders can delegate JT to them, effectively add
 
 Out of all supernode candidates that signaled themselves, the 100 with the most total stake are the ones who are designated as supernodes. They become supernodes If a supernode's total stake falls below the top 100 then that supernode loses their supernode privileges: they don't participate in consensus and generate rewards any more.
 
-## Join the Just Net
+### Join the Just Net
 
 ### Install justd & justcli
 justcli need update to the version V1.1

@@ -96,6 +96,21 @@ justcli tx staking edit-validator \
   --from="<account_name>"
 ```
 
+### Change commission rate
+```
+justcli tx staking edit-validator \
+  --chain-id="justnet" \
+  --gas="auto" \
+  --gas-prices="25000000000.0ajt" \
+  --from=<account_name> \
+  --commission-rate="<commission_rate>" \
+  --gas-adjustment="1.9"
+```
+**[Note]**: The commission-rate value must adhere to the following invariants:
+- Must be between 0 and the supernode's commission-max-rate
+- Must not exceed the supernode's commission-max-change-rate which is maximum % point change rate per day. In other words, a supernode can only change its commission once per day and within commission-max-change-rate bounds.
+
+
 ### View Supernode Description
 View your supernode address
 ```

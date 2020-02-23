@@ -34,7 +34,7 @@ Support linux operating system, ubuntu 16+, centOS 7+ are recommended
 ### Install justcli
 Download the execution file of justcli from releases page, or use wget
 ```
-wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.0/justcli.tar.gz
+wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.2/justcli.tar.gz
 ```
 copy justcli to the / usr / local / bin directory, and enter the directory to modify the execution permissions
 ```

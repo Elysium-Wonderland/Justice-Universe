@@ -30,10 +30,9 @@ Out of all supernode candidates that signaled themselves, the 100 with the most 
 ### Join the Just Net
 
 ### Install justd & justcli
-justcli need update to the version V1.1
 ```
 wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.1/justd.tar.gz
-wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.1/justcli.tar.gz
+wget https://github.com/Elysium-Wonderland/Justice-Universe/releases/download/V1.2/justcli.tar.gz
 ```
 copy justd & justcli to the / usr / local / bin directory, and enter the directory to modify the execution permissions
 ```

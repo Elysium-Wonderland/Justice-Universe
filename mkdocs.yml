@@ -5,4 +5,5 @@ nav:
   - Query: query.md
   - Transaction: tx.md
   - Supernode: supernode.md
+  - Wallet: wallet.md
 theme: readthedocs

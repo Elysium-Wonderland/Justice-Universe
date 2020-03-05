@@ -10,11 +10,21 @@ Just wallet is a single page web application. It should be deployed in a web ser
 
 Please go to the [Just Docs](https://justice-universe.readthedocs.io/supernode/)
 
-### Step 2: Install Nginx
+### Step 2: Start Just Rest Server
+
+``` shell
+justcli rest-server --chain-id justnet --laddr tcp://0.0.0.0:1317
+```
+
+### Step 3: Install Nginx
 
 Please go to the [Nginx Docs](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
-### Step 3: Configure Nginx as proxy of Just Node
+### Step 4: Download Just Wallet
+
+Download the Just Wallet, extract it and copy it to a folder.
+
+### Step 5: Configure Nginx as proxy of Just Node
 
 For security, Just rpc doesn't support Cross-Origin Resource Sharing (CORS). So a proxy is required if wallet running in browser wants to call RPC from Justd. We suggest using Nginx to act the proxy. CORS should be enabled in the Nginx configuration as well.
 
@@ -39,11 +49,11 @@ if ($request_method = 'OPTIONS') {
 
 > JUSTD_RPC_URL should be defined as the rpc endpoint of justd node. Default port is 1317. If justd and nginx are in the same host, it would be http://127.0.0.1:1317/.
 
-### Step 4: Download Just Wallet
+### Step 6: Download Just Wallet
 
 Download the Just Wallet, extract it and copy it to a folder.
 
-### Step 5: Configure Nginx as web server of Just Wallet
+### Step 7: Configure Nginx as web server of Just Wallet
 
 Just Wallet is a web application. You must deploy in a web server. We take Nginx as a sample.
 
@@ -65,11 +75,11 @@ location @router {
 }
 ```
 
-### Step 6: Configure Just Wallet
+### Step 8: Configure Just Wallet
 
 Configure the application in just wallet folder. Change the rpcUrl to the Nginx web applcation url.
 
-### Step 7: Start Nginx
+### Step 9: Start Nginx
 
 &nbsp;
 ## Deploy by Docker
@@ -78,13 +88,24 @@ Configure the application in just wallet folder. Change the rpcUrl to the Nginx 
 
 Please go to the [Just Docs](https://justice-universe.readthedocs.io/supernode/)
 
-### Step 2: Docker pull
+### Step 2: Start Just Rest Server
+``` shell
+justcli rest-server --chain-id justnet --laddr tcp://0.0.0.0:1317
+```
+
+### Step 3: Docker pull
 
 docker pull elysiumwonder/just-wallet:latest
 
-### Step 3: Run Docker
+### Step 4: Run Docker
 
+``` shell
 docker run -p 8080:8080 --name just-wallet --env WEB_SERVER_URL='[web_server_url]' --env JUST_NODE_URL='[just_node_url]' elysiumwonder/just-wallet:latest
+```
+
+Please don't assign 127.0.0.1 to [just_node_url] event if the web_server and just_node are in the same host.
+
 > web_server_url is the real endpoint of the wallet application. User can input the url in browser (chrome) to access the wallet.
 > just_node_url is the rpc endpoint of just node installed above.
 > e.g. Connect to test net: docker run -p 8080:8080 --name just-wallet --env WEB_SERVER_URL='http://127.0.0.1:8080' --env JUST_NODE_URL='http://157.230.39.223:1317' elysiumwonder/just-wallet:latest
+

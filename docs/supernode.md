@@ -51,7 +51,7 @@ curl https://raw.githubusercontent.com/Elysium-Wonderland/Justice-Universe/maste
 ```
 modify the ~/.justd/config/config.toml, change the persistent_peers config
 ```
-persistent_peers = "196b4202bb19690808f6e8f6a08464454c949d46@165.227.189.246:26656,9ac993102af9256dc44d9bb3e2e6d59bd8bbef66@157.245.215.213:26656,f3151e9e52dfe96788def701016f017dbb8189be@47.244.49.180:26656"
+persistent_peers = "196b4202bb19690808f6e8f6a08464454c949d46@165.227.189.246:26656,9ac993102af9256dc44d9bb3e2e6d59bd8bbef66@157.245.215.213:26656,f3151e9e52dfe96788def701016f017dbb8189be@47.244.49.180:26656,62e7fc78f77e2ea23d6224accfe49c1c7b746030@165.22.134.90:26656,9f254b1418915025425fde2d643ce0e495f90f8a@47.91.239.18:26656"
 ```
 set the gasprice and start
 ```

@@ -5,6 +5,6 @@ nav:
   - Query: query.md
   - Transaction: tx.md
   - Supernode: supernode.md
-  - Wallet: wallet.md
-  - Wallet PC app: wallet-electron.md
+  - Web Wallet: wallet.md
+  - PC Wallet: wallet-electron.md
 theme: readthedocs

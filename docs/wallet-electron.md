@@ -12,7 +12,13 @@ Please refer to the [Official Guide](https://nodejs.org/en/download/)
 npm install -g vue-cli
 ```
 
-### Step 3: Install dependency
+### Step 3: Git clone wallet source code from github
+
+```shell
+git clone https://github.com/Elysium-Wonderland/just-wallet-electron.git
+```
+
+### Step 4: Install dependency
 
 cd to the directory and run:
 
@@ -20,13 +26,13 @@ cd to the directory and run:
 npm install
 ```
 
-### Step 4: Update the justd RPC url
+### Step 5: Update the justd RPC url
 
 Open the config file: src/renderer/config/application.json
 
 Change the rpcUrl to the proper justd RPC url
 
-### Step 5: Build app for Windows/Mac
+### Step 6: Build app for Windows/Mac
 
 Build exe for Windows:
 
@@ -43,6 +49,3 @@ npm run mac
 > dmg file cannot be built in windows system.
 
 The exe/dmg files are generated in build/ directory.
-
-
-

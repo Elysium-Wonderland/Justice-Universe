@@ -166,3 +166,25 @@ When a supernode is "jailed" for downtime, you must submit an Unjail transaction
 ```
 justcli tx slashing unjail --from=<account_name> --fees=5000000000000000ajt
 ```
+
+### Proposal
+Query information of the proposal
+```
+justcli query gov proposal <proposal_id>
+```
+Vote on a Proposal
+```
+justcli tx gov vote <proposal_id> <Yes/No/NoWithVeto/Abstain> --from=<account_name> --fees=5000000000000000ajt
+```
+Check the vote with the option you just submitted
+```
+justcli query gov vote <proposal_id> <voter_address>
+```
+You can also get all the previous votes submitted to the proposal with
+```
+justcli query gov votes <proposal_id>
+```
+To check the current tally of a given proposal you can use the tally command:
+```
+justcli query gov tally <proposal_id>
+```

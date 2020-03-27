@@ -1,5 +1,20 @@
 # Vote
 
+### Governance
+
+Governance is the process from which users in the JustNet can come to consensus on software upgrades, parameters of the mainnet or signaling mechanisms through text proposals. This is done through voting on proposals, which will be submitted by `JT` holders on the mainnet.
+
+Some considerations about the voting process:
+
+- Voting is done by bonded `JT` holders on a 1 bonded `JT` 1 vote basis
+- Delegators inherit the vote of their Supernode if they don't vote
+- Votes are tallied at the end of the voting period (2 days) where each address can vote multiple times to update its `Option` value (paying the transaction fee each time), only the most recently cast vote will count as valid
+- Voters can choose between options `Yes`, `No`, `NoWithVeto` and `Abstain`
+- At the end of the voting period, a proposal is accepted if:
+  - `(YesVotes / (YesVotes+NoVotes+NoWithVetoVotes)) > 1/2`
+  - `(NoWithVetoVotes / (YesVotes+NoVotes+NoWithVetoVotes)) < 1/3`
+  - `((YesVotes+NoVotes+NoWithVetoVotes) / totalBondedStake) >= quorum`
+  
 ### Who can vote
 
 On the JustNet, participants are bonded JT holders. Unbonded JT holders and other users do not get the right to participate in governance.

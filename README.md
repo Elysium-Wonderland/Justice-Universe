@@ -165,3 +165,6 @@ justcli tx staking unbond <supernode_address> <amount>ajt --from <account_name> 
 
 ### Become a supernode
 To learn how to become a supernode, go to the [Supernode Intro](./docs/supernode.md).
+
+### Vote on proposals
+To learn how to vote on proposals, go to the [Vote Intro](./docs/vote.md).
